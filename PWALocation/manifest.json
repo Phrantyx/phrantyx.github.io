@@ -1,7 +1,7 @@
 {
     "name": "PWALocation",
     "short_name": "PWALocation",
-    "start_url": "/?home=true",
+    "start_url": "/PWALocation",
     "icons": [
         {
             "src": "icons/manifest-icon-192.maskable.png",
