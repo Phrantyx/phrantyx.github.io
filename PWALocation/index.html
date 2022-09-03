@@ -8,13 +8,26 @@
     <link rel="shortcut icon" href="Zlogo.jpg" type="image/x-icon">
 
     <link rel="manifest" href="manifest.json">
+
+    <style>
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 90vh;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Location</h1>
-    <h2><button onclick="getLocation()">Get Location</button></h2>
-    <h2 id="loc"></h2>
-
+    <div class="center">
+        <div>
+            <h1>Location</h1>
+            <h2><button onclick="getLocation()">Get Location</button></h2>
+            <h2 id="loc">Latitude: <br> Longitude: </h2>
+        </div>
+    </div>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('service-worker.js');
